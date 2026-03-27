@@ -1,0 +1,29 @@
+============================================================
+  CSH Cross-Cloud Demo — Live Questions for Foundry Agent
+  Run from: VS Code Terminal (csh-scheduling-orchestrator/)
+============================================================
+
+QUESTION 1 — Patient Lookup + Follow-up Analysis
+python test_new_agent.py "Show me all appointments for patient P-1007 and tell me if any need follow-up"
+
+QUESTION 2 — Find by Specialty + Location
+python test_new_agent.py "I need to find an available orthopedic appointment at Mercy Hospital West"
+
+QUESTION 3 — Cancel with Reason
+python test_new_agent.py "Cancel appointment APT-012 because the patient requested a different provider"
+
+QUESTION 4 — Multi-step: Find + Recommend
+python test_new_agent.py "Patient P-1001 Maria Garcia needs a new cardiology appointment, what slots are open with Dr. Sarah Chen?"
+
+QUESTION 5 — Broad Search
+python test_new_agent.py "What are all the available appointments across all specialties this week?"
+
+============================================================
+  TIPS FOR DEMO
+============================================================
+- Run each question from VS Code terminal
+- After each, go to GCP BigQuery → Job history → Project history → Refresh
+  to see the new query from 732227602168-compute@ service account
+- Go to Foundry Portal (ai.azure.com) → Tracing to see the full trace
+- Same question can also be asked to GCP Gemini directly via /chat for comparison
+============================================================

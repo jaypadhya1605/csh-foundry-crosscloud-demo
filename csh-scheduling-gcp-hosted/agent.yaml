@@ -1,0 +1,10 @@
+name: csh-scheduling-gcp-agent
+description: "GCP Cloud Run scheduling agent — proxies to real BigQuery via GCP. Cross-cloud hosted agent in Foundry."
+template:
+  kind: hosted
+  protocols:
+    - protocol: responses
+      version: "v1"
+  environment_variables:
+    - name: GCP_AGENT_URL
+      value: "https://csh-scheduling-agent-732227602168.us-central1.run.app/invoke"

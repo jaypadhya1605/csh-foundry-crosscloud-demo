@@ -1,0 +1,92 @@
+## What Murali Wants From This Call (and the Series)
+
+### 1. **A unified, enterprise‑grade *agent orchestration platform***
+
+Murali’s core ask is **not individual agents or demos**, but a **single, centralized platform** where multiple agents can be:
+
+*   Triggered by events
+*   Orchestrated together
+*   Monitored and governed in one place
+
+He explicitly said they **do not have a unified multi‑agent platform today** and that this is a **gap** for them.
+
+> “We don’t have currently the multi‑agent orchestration platform… If we have a single pane of dashboard that says ‘these are all the agents and they’re talking to each other’ — that’s what I’m looking for.”
+
+### 2. **Event‑driven, headless agent workflows (not UI demos)**
+
+Murali repeatedly emphasized **automation over UI interaction**:
+
+*   Agents triggered by **messages/events** (e.g., Pub/Sub, queues)
+*   Headless execution (no human clicking)
+*   End‑to‑end flows that **run on their own**
+
+> “I get a message in the queue… I should be able to kick off an agent… make a decision and take an action.”
+
+Later, he reinforced that **internal workflows don’t need chatbot‑style guardrails demos** as much as **operational automation**:
+
+> “A lot of our workflows are strictly internal… It’s all about workflow and how it reduces overhead… Any headless agentic automation is what I’m interested in.”
+
+### 3. **Cross‑cloud integration (especially GCP / BigQuery)**
+
+A major requirement: **Foundry must work with their existing GCP data estate**.
+
+He clearly described:
+
+*   Data warehouse in **GCP / BigQuery**
+*   Events originating there
+*   Agents running elsewhere (e.g., Foundry)
+*   Secure, governed access back to BigQuery
+
+> “Most of our data warehouse is in GCP… If we want Microsoft Foundry as our agentic orchestration platform, these two have to be seamless.”
+
+This is why **MCP tools + orchestration** resonated strongly for him.
+
+### 4. **Governance & observability across *all* agents (not just Microsoft-hosted)**
+
+Murali acknowledged a **governance blind spot today**:
+
+> “We don’t have an agent environment where you can deploy, monitor, and govern agents. We have a blind spot there.”
+
+What he wants:
+
+*   Monitoring, tracing, evaluation
+*   Across **agents built on different frameworks**
+*   Even when agents are **not hosted directly in Foundry**
+
+This is why DSPM, platform‑agnostic observability, and “bring your own agent” messaging landed.
+
+### 5. **Practical business use cases (non‑imaging preferred next)**
+
+Radiology was interesting, but **not the priority path forward** due to PACS complexity and team dependencies.
+
+He explicitly redirected toward:
+
+*   **Denials & appeals**
+*   **Revenue‑cycle workflows**
+*   **Appointments, scheduling, no‑shows**
+
+> “Denials and re‑appeal… creating those letters — that’s revenue related.”  
+> “Making appointments, cancellations, rebooking — that’s very time‑consuming.”
+
+He committed to **coming back with prioritized use cases** after checking internally.
+
+### 6. **A sandbox / safe environment — but with network constraints**
+
+He is open to a sandbox or POC **but flagged access blockers**:
+
+> “I cannot go to ai.azure.com — it is blocked right now.”
+
+So next steps must account for:
+
+*   Network‑isolated setup
+*   Security team involvement
+*   Possibly Microsoft‑hosted POC first
+
+## One‑sentence summary (what Murali *really* wants)
+
+> **“Show me how Microsoft Foundry can act as a headless, cross‑cloud, multi‑agent orchestration and governance platform that plugs into our existing GCP workflows and scales across real business processes — not just demos.”**
+
+If you want, I can:
+
+*   Turn this into **3 crisp exec takeaways** for Charles / Joey
+*   Draft **recommended agenda for the *next* cadence** aligned to Murali’s asks

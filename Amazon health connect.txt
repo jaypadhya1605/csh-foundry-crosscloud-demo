@@ -1,0 +1,4 @@
+Amazon health connect : 
+https://aws.amazon.com/blogs/industries/introducing-amazon-connect-health-agentic-ai-for-healthcare-built-for-the-people-who-deliver-it/
+
+https://aws.amazon.com/health/connect-health/

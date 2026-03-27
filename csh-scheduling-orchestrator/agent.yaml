@@ -1,0 +1,30 @@
+name: csh-scheduling-orchestrator
+description: >
+  Cross-cloud scheduling orchestrator for CommonSpirit Health.
+  Coordinates GCP-based scheduling agents from Azure AI Foundry.
+  Handles appointment finding, cancellations, and rebooking workflows.
+metadata:
+  authors:
+    - Microsoft
+  tags:
+    - Azure AI AgentServer
+    - Microsoft Agent Framework
+    - Cross-Cloud Orchestration
+    - Healthcare Scheduling
+    - Multi-Agent
+template:
+  name: csh-scheduling-orchestrator
+  kind: hosted
+  protocols:
+    - protocol: responses
+  environment_variables:
+    - name: PROJECT_ENDPOINT
+      value: ${AZURE_AI_PROJECT_ENDPOINT}
+    - name: MODEL_DEPLOYMENT_NAME
+      value: "{{chat}}"
+    - name: GCP_AGENT_URL
+      value: "https://csh-scheduling-agent-5qkrt5ipcq-uc.a.run.app"
+resources:
+  - kind: model
+    id: gpt-4o
+    name: chat
